@@ -28,7 +28,8 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "scripts/build.sh",
+    "build": "node scripts/build.mjs",
+    "pin": "node scripts/build.mjs --pin",
     "test": "vitest run",
     "check": "tsc --noEmit",
     "test:safari": "vitest run --config vitest.safari.config.ts"
