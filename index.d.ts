@@ -108,8 +108,6 @@ export interface CApi {
 	sqlite3_errstr(rc: number): string;
 	sqlite3_extended_errcode(pDb: Pointer): number;
 	sqlite3_vfs_find(name: string | null): Pointer;
-	sqlite3_memory_used(): number | bigint;
-	sqlite3_memory_highwater(reset: number): number | bigint;
 	sqlite3_compileoption_used(name: string): number;
 	sqlite3_key_v2(pDb: Pointer, schema: string, pKey: Pointer, nKey: number): number;
 	sqlite3_rekey_v2(pDb: Pointer, schema: string, pKey: Pointer, nKey: number): number;
