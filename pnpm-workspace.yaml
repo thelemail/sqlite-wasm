@@ -1,0 +1,4 @@
+minimumReleaseAge: 1440
+allowBuilds:
+  edgedriver: false
+  geckodriver: false
