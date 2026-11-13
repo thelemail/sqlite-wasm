@@ -1,0 +1,41 @@
+{
+	"sqlite": {
+		"version": "3.54.0",
+		"checkin": "be8d059e9a49089ab2dce5ed26dd87aaf598fdc5fbe0b107c0dd758464bcd5e3",
+		"url": "https://sqlite.org/2026/sqlite-src-3540000.zip",
+		"sha3-256": "a5c29342ca185abcda332448fbb27c536661245be27e20199b46c49099b0e15e",
+		"sha256": "8847659821e0c5116bd14a94644c82ba932b2d9a05ac81af2e34af814aad7c58"
+	},
+	"sqlite3mc": {
+		"version": "2.6.1",
+		"url": "https://github.com/utelle/SQLite3MultipleCiphers/releases/download/v2.6.1/sqlite3mc-2.6.1-sqlite-3.54.0-amalgamation.zip",
+		"sha256": "3f25af603566a23c821d8e581778b5ece2a541d2435776de57b8d845c176815a"
+	},
+	"patches": {
+		"EXPORTED_FUNCTIONS.c-pp.patch": "ea860fdb37958653f9e8e5a96e910b422aa7343ac1a63b849eb6673f04e27180",
+		"GNUmakefile.patch": "3ca36a9ea3e5311215d3f8965e7291fb5f58a64c985c1929ae14197a84995a8e",
+		"mkwasmbuilds.c.patch": "24bde0d3907137db430c7b24caa17e33ed23d3d25a86e998a3f0e3218c715405",
+		"sqlite3-api-glue.c-pp.js.patch": "952bc598fe06d61be87f98edda4a7a9d5efef673274f388bc4d77c8f0636a59b"
+	},
+	"emsdk": {
+		"version": "6.0.3",
+		"index": "sha256:bb0910e6a18bb9bd7cb31ae4ed40f9073148b78cb2cdb8ea8676454e0d85425c",
+		"amd64": "emscripten/emsdk@sha256:2a7a41cd7e2065b30ba389c8db0fbeaebd7ec06bb4e20f23cab8ba92180f25c7",
+		"arm64": "emscripten/emsdk@sha256:ddfb30ef76e97bb9a231af1fb262f0a4f2f6aa726778572a028e215922afac40"
+	},
+	"wabt": {
+		"version": "1.0.34+dsfg2+~cs1.0.32-1ubuntu2",
+		"amd64": {
+			"url": "http://archive.ubuntu.com/ubuntu/pool/universe/w/wabt/wabt_1.0.34%2Bdsfg2%2B~cs1.0.32-1ubuntu2_amd64.deb",
+			"sha256": "ac76092c4ce135ea946f3f9b60b13cd0e1cbbbb8ae96c2bf4838b45950e833aa"
+		},
+		"arm64": {
+			"url": "http://ports.ubuntu.com/ubuntu-ports/pool/universe/w/wabt/wabt_1.0.34%2Bdsfg2%2B~cs1.0.32-1ubuntu2_arm64.deb",
+			"sha256": "c3b614d5fa202e2be4020e55f278bec8b46f4a86d64b04cba46fa38dc854a5e0"
+		}
+	},
+	"output": {
+		"sqlite3.mjs": "5308c7cc857408697c657a8d314e647a6f31c4aee67974ab8efd80c1a07161e0",
+		"sqlite3.wasm": "0b5a4bfff35f1ec87bf6f68ea293f425b86cbd661b77628a955cb827c9fbf524"
+	}
+}
